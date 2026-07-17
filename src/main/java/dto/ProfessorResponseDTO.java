@@ -1,4 +1,4 @@
-package com.escola.escolainglesapi.dto;
+package dto;
 
 import java.math.BigDecimal;
 

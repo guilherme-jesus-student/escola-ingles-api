@@ -6,12 +6,8 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>4.1.0</version>
-<<<<<<< HEAD
-		<relativePath/> </parent>
-=======
 		<relativePath/>
 	</parent>
->>>>>>> origin/main
 	<groupId>com.escola</groupId>
 	<artifactId>escola-ingles-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>

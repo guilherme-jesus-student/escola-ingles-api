@@ -1,7 +1,7 @@
 package com.escola.escolainglesapi.service;
 
-import com.escola.escolainglesapi.dto.ProfessorDTO;
-import com.escola.escolainglesapi.dto.ProfessorResponseDTO;
+import dto.ProfessorDTO;
+import dto.ProfessorResponseDTO;
 import com.escola.escolainglesapi.model.Professor;
 import com.escola.escolainglesapi.repository.ProfessorRepository;
 import org.springframework.stereotype.Service;

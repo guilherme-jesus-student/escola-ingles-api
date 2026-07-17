@@ -1,20 +1,17 @@
+version: '3.8'
+
 services:
   postgres:
-    image: postgres:16
-    container_name: escola_ingles_postgres
+    image: postgres:latest
+    container_name: escola-postgres
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:-escola_ingles_db}
-      POSTGRES_USER: ${POSTGRES_USER:-escola_ingles_stefanini}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-180318}
+      POSTGRES_DB: escola_ingles_db
+      POSTGRES_USER: escola_ingles_stefanini
+      POSTGRES_PASSWORD: "180318"
     ports:
       - "5432:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U escola_ingles_stefanini -d escola_ingles_db"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  pgdata:
+  postgres_data:

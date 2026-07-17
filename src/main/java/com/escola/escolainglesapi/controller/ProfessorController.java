@@ -1,7 +1,7 @@
 package com.escola.escolainglesapi.controller;
 
-import com.escola.escolainglesapi.dto.ProfessorDTO;
-import com.escola.escolainglesapi.dto.ProfessorResponseDTO;
+import dto.ProfessorDTO;
+import dto.ProfessorResponseDTO;
 import com.escola.escolainglesapi.service.ProfessorService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
