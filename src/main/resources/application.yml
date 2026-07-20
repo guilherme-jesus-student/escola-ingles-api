@@ -2,6 +2,12 @@ spring:
   application:
     name: escola-ingles-api
 
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+
   datasource:
     url: jdbc:postgresql://localhost:5432/escola_ingles_db
     username: escola_user
