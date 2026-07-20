@@ -9,13 +9,12 @@ spring:
       add-mappings: false
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/escola_ingles_db
-    username: escola_user
-    password: escola_password
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/escola_ingles_db}
+    username: ${DB_USERNAME:escola_ingles_stefanini}
+    password: ${DB_PASSWORD:180318}
     driver-class-name: org.postgresql.Driver
 
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: validate
     show-sql: true
